@@ -37,3 +37,14 @@ pytest
 ```
 
 Every time you want to check your work locally you can type that command, and it will report the status of every task in the project.
+
+# Working on tasks
+## Task 1: Importing Pandas Library
+**`@pytest.mark.test_task1`** In order start working with the project, load the `pandas` library with an alias `pd` at the top of the `tasks/solution.py` file.
+
+## Task 2: Importing the CSV dataset
+**`@pytest.mark.test_task2`** Next, in the same file load the dataset `student_db.py` from the `data` directory using the `pd.read_csv()` method and store the Pandas DataFrame in the `df` variable.
+
+## Task 3: Finding the Median of the GRADE column
+**`@pytest.mark.test_task3`** To fill the missing values in the GRADE column, find the median of the complete column using the `median()` function and store the result to a variable `grade_median`. 
+
