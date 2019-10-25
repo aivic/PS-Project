@@ -4,7 +4,7 @@ import pandas as pd
 
 
 # Task 2: Reading CSV file into a Pandas DataFrame
-df = pd.read_csv('../data/student_db.csv')
+df = pd.read_csv('data/student_db.csv')
 
 
 # Task 3: 
