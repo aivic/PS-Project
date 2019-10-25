@@ -1,10 +1,6 @@
 # Importing libraries
 import pytest
-from utils import get_calls, get_assignments
-import sys
-
-sys.path.insert(1, '../')
-
+from .utils import get_calls, get_assignments
 from tasks import solution
 
 # -------------------------------------------------
@@ -21,7 +17,7 @@ def test_task1():
 
 @pytest.mark.test_task2
 def test_task2():
-    assert get_calls(solution)[0] == 'pd:read_csv:../data/student_db.csv', 'Have you loaded the CSV file using the `pd.read_csv()` method with proper arguments?'
+    assert get_calls(solution)[0] == 'pd:read_csv:data/student_db.csv', 'Have you loaded the CSV file using the `pd.read_csv()` method with proper arguments?'
     assert get_assignments(solution)[0][:2] == 'df', 'Has the `df` DataFrame been created?'    
 
 # -------------------------------------------------
