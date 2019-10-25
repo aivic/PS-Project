@@ -1,5 +1,4 @@
 # Task 1: Importing Pandas library
-
 import pandas as pd
 
 
@@ -7,5 +6,5 @@ import pandas as pd
 df = pd.read_csv('data/student_db.csv')
 
 
-# Task 3: 
+# Task 3: Finding the median of the GRADE column
 grade_median = df.GRADE.median()
